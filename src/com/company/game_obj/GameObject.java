@@ -10,7 +10,11 @@ public abstract class GameObject {
         this.signOnScreen = signOnScreen;
     }
 
-    public boolean isIntersecting (GameObject other){
+    public boolean isIntersecting(GameObject other) {
         return this.x == other.x && this.y == other.y;
+    }
+
+    public boolean isIntersecting(int x, int y) {
+        return this.x == x && this.y == y;
     }
 }

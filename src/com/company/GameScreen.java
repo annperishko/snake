@@ -28,13 +28,10 @@ public class GameScreen {
 
     }
 
-    public void setObjectOnScreen(GameObject o){
+    public void setObjectOnScreen(GameObject o) {
         screen[o.x][o.y] = o.signOnScreen;
 
     }
-
-
-
 
 
 }

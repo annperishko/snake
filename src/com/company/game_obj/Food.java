@@ -9,12 +9,4 @@ public class Food extends GameObject {
         this.growthFactor = 1;
     }
 
-
-    /*void create() {
-    }
-
-    void destroy() {
-    }
-*/
-
 }
