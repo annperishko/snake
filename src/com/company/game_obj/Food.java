@@ -1,7 +1,5 @@
 package com.company.game_obj;
 
-import com.company.GameObject;
-
 public class Food extends GameObject {
 
     int growthFactor;

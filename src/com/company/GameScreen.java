@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.game_obj.GameObject;
+
 public class GameScreen {
     int screenSize = 10;
     char empty = '-';
@@ -7,7 +9,7 @@ public class GameScreen {
 
 
     //fills screen with blank cells
-    void fillScreen() {
+    public void fillScreen() {
         for (int i = 0; i < screenSize; i++) {
             for (int j = 0; j < screenSize; j++) {
                 screen[i][j] = empty;
@@ -16,7 +18,7 @@ public class GameScreen {
 
     }
 
-    void printScreen() {
+    public void printScreen() {
         for (int i = 0; i < screenSize; i++) {
             for (int j = 0; j < screenSize; j++) {
                 System.out.print(screen[j][i] + "  ");
@@ -26,10 +28,12 @@ public class GameScreen {
 
     }
 
-    void setObjectOnScreen(GameObject o){
+    public void setObjectOnScreen(GameObject o){
         screen[o.x][o.y] = o.signOnScreen;
 
     }
+
+
 
 
 
